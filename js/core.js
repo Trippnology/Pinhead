@@ -13,6 +13,12 @@ var addElement = function(name, attrs, innerText, parent) {
 	return parent.appendChild(element);
 };
 
+// Add console.log wrapper
+var logWrapper = document.head.appendChild(
+	document.createElement('script')
+);
+logWrapper.src = 'https://raw.github.com/cpatik/console.log-wrapper/master/consolelog.min.js'; // kicks off the request
+
 // Set a title
 document.head.appendChild(
 	document.createElement('title')
