@@ -51,9 +51,12 @@ var library = document.head.appendChild(
 );
 // Do stuff once the library has loaded
 library.addEventListener('load', function () {
-	addElement('div', {'class': 'container'});
+	// The container div we'll stuff all our content into
+	var container = addElement('div', {'class': 'container'});
+	addElement('h1', null, 'Hello World!', container);
+	addElement('p', {'class': 'label label-important'}, 'jQuery has not loaded.', container);
 	// Use a jQuery method to check it loaded ok
-	$('.container').html('<h1>Hello World!</h1><p>jQuery loaded successfully.</p>');
+	$('.container p.label-important').removeClass('label-important').addClass('label-success').text('jQuery loaded successfully.');
 });
 library.src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'; // kicks off the request
 
