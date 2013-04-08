@@ -22,10 +22,10 @@ function addElement(name, attrs, innerText, parent) {
 addElement('title', null, 'Pinhead', document.head);
 
 // Add Bootstrap CSS
-addElement('link', {'href':'http://twitter.github.com/bootstrap/assets/css/bootstrap.css','rel':'stylesheet'}, null, document.head);
+addElement('link', {'href':'http://twitter.github.io/bootstrap/assets/css/bootstrap.css','rel':'stylesheet'}, null, document.head);
 
 // Add Bootstrap responsive CSS
-addElement('link', {'href':'http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css','rel':'stylesheet'}, null, document.head);
+addElement('link', {'href':'http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css','rel':'stylesheet'}, null, document.head);
 // Set a viewport
 addElement('meta', {'name':'viewport', 'content':'width=device-width, initial-scale=1.0'}, null, document.head);
 
@@ -47,7 +47,7 @@ library.addEventListener('load', function() {
 });
 
 // Add console.log wrapper
-addElement('script', {'src':'https://raw.github.com/cpatik/console.log-wrapper/master/consolelog.min.js'}, null, document.head);
+addElement('script', {'src':'https://raw.github.io/cpatik/console.log-wrapper/master/consolelog.min.js'}, null, document.head);
 
 // Add Bootstrap plugins
-addElement('script', {'src':'http://twitter.github.com/bootstrap/assets/js/bootstrap.js'}, null, container);
+addElement('script', {'src':'http://twitter.github.io/bootstrap/assets/js/bootstrap.js'}, null, container);
