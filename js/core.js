@@ -48,4 +48,4 @@ library.addEventListener('load', function() {
 addElement('script', {'src':'https://raw.githubusercontent.com/cpatik/console.log-wrapper/master/consolelog.min.js'}, null, document.head);
 
 // Add Bootstrap plugins
-addElement('script', {'src':'http://getbootstrap.com/dist/js/bootstrap.min.js'}, null, container);
+addElement('script', {'src':'http://getbootstrap.com/dist/js/bootstrap.min.js'}, null, document.body);
